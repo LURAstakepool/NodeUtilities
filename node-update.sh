@@ -4,6 +4,8 @@
 git fetch --all --recurse-submodules --tags
 
 git checkout $(curl -s https://api.github.com/repos/input-output-hk/cardano-node/releases/latest | jq -r .tag_name)
+# Or --> git checkout tags/x.xx.x Ex: git checkout tags/1.35.0
+
 
 cabal configure –with-compiler=ghc-8.10.7
 
