@@ -31,4 +31,3 @@ git reset --hard ac83be33d0956faf6b7f61a60ab524ef7d6a473a
 make
 make check
 sudo make install
-sudo reboot
